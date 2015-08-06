@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".gl2jni.GL2JNIActivity"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

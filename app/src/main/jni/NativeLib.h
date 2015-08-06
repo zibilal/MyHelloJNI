@@ -10,6 +10,9 @@ extern "C" {
 
 JNIEXPORT jint JNICALL Java_com_zibilal_myhellojni_nativelib_NativeLib_getCpuCount(JNIEnv *, jclass);
 JNIEXPORT jstring JNICALL Java_com_zibilal_myhellojni_nativelib_NativeLib_getCpuFamily(JNIEnv *, jclass);
+JNIEXPORT jstring JNICALL Java_com_zibilal_myhellojni_nativelib_NativeLib_stringFromJNI(JNIEnv *, jobject);
+JNIEXPORT void JNICALL Java_com_zibilal_myhellojni_nativelib_NativeLib_init(JNIEnv * env, jobject obj,  jint width, jint height);
+JNIEXPORT void JNICALL Java_com_zibilal_myhellojni_nativelib_NativeLib_step(JNIEnv * env, jobject obj);
 
 #ifdef __cplusplus
 }

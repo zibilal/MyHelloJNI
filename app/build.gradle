@@ -29,7 +29,9 @@ model {
     }
     android.ndk {
         moduleName = "NativeLib"
-        ldLibs += [ "android", "log"]
+        cppFlags += "-I${file("src/main/jni/cpufeatures")}".toString()
+        cppFlags += "-Werror"
+        ldLibs += [ "android", "log", "GLESv2"]
         stl = "stlport_static"
     }
     android.buildTypes {
